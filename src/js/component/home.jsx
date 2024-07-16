@@ -81,8 +81,8 @@ function Home() {
           ))}
         </tbody>
       </table>
-      <div className="buttons d-flex justify-content-center bg-secondary p-3 text-light">
-        {currentSongIndex !== null && (
+      <div className="buttons d-flex justify-content-center bg-secondary p-3 text-light fixed-bottom">
+        { (
           <>
             <button className="playing mx-3" onClick={togglePlayPause}>{isPlaying ? 'Pause' : 'Play'}</button>
             <button onClick={handleStop}>Stop</button>
